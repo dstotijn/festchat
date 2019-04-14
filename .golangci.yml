@@ -1,0 +1,53 @@
+linters:
+  enable:
+    - deadcode
+    - errcheck
+    - gochecknoglobals
+    - gocritic
+    - golint
+    - gosec
+    - gosimple
+    - govet
+    - ineffassign
+    - interfacer
+    - lll
+    - scopelint
+    - staticcheck
+    - stylecheck
+    - structcheck
+    - typecheck
+    - unconvert
+    - unparam
+    - unused
+    - varcheck
+
+linters-settings:
+  gocritic:
+    enabled-checks:
+      - appendAssign
+      - assignOp
+      - captLocal
+      - caseOrder
+      - defaultCaseOrder
+      - dupArg
+      - dupBranchBody
+      - dupCase
+      - dupSubExpr
+      - elseif
+      - flagDeref
+      - ifElseChain
+      - regexpMust
+      - singleCaseSwitch
+      - sloppyLen
+      - switchTrue
+      - typeSwitchVar
+      - underef
+      - unlambda
+      - unslice
+      - commentFormatting
+      - weakCond
+  lll:
+    line-length: 80
+
+issues:
+  exclude-use-default: false
